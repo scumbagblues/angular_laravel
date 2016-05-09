@@ -1,0 +1,31 @@
+<div class="card-panel">
+<h3 class="header">{{ title }}</h3>
+	<form ng-submit="saveUser()">
+		<div class="input-field">
+			<input placeholder="Name" type="text" ng-model="User.Name" required>
+		</div>
+		<div class="input-field">
+			<input placeholder="Address 1" type="text" ng-model="User.Address1" required>
+		</div>
+		<div class="input-field">
+			<input placeholder="Address 2" type="text" ng-model="User.Address2" required>
+		</div>
+		<div class="input-field">
+			<input placeholder="Zip Code" type="text" ng-model="User.Zip" required>
+		</div>
+		<div class="input-field">
+			<input placeholder="Country" type="text" ng-model="User.Country" required>
+		</div>
+		<div class="input-field">
+			<input placeholder="State" type="text" ng-model="User.State" required>
+		</div>
+		<button class="btn waves-effect" type="submit">
+			{{ button }}
+		</button>
+	</form>
+</div>
+<div class="fixed-action-btn" ng-show="showbutton" style="bottom: 45px; right: 24px">
+	<a href="#/users/new" class="btn-floating btn-large waves-effect waves-light red">
+		<i class="large material-icons">add</i>
+	</a>
+</div>
