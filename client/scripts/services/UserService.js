@@ -2,7 +2,7 @@
 
 angular.module('Client')
 	.factory('UserResource', function($resource) {
-		return $resource("http://entrylessapi.app/users/:id", {
+		return $resource("http://laravelapi.app/users/:id", {
 			id: "@Userid",
 			names: "@Name"
 		}, {
